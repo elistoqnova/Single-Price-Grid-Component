@@ -1,0 +1,149 @@
+:root {
+  /* COLORS */
+
+    /* PRIMARY */
+
+    --clr-primary-cyan: hsl(179, 62%, 43%);
+    --clr-primary-yellow: hsl(71, 73%, 54%);
+
+    /* NEUTRAL */
+
+    --clr-neutral-gray: hsl(204, 43%, 93%);
+    --clr-neutral-blue: hsl(218, 22%, 67%);
+
+  /* TYPOGRAPHY */
+
+    /* SIZES */
+
+    --fs-primary: 1rem;
+
+    /* FONTS/WEIGHTS */
+
+    --ff-primary: "Karla", sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--fs-primary);
+  font-family: var(--ff-primary);
+}
+
+body {
+  background-color: var(--clr-neutral-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  
+}
+
+.container{
+  max-width: 960px;
+}
+
+.wrapper {
+  display: grid;
+  border-radius: 7px;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+  background-color: #FFF;
+  margin: 2rem 1rem;
+}
+
+.box {
+  padding: 40px;
+}
+
+.join {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.sub {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: var(--clr-primary-cyan);
+}
+
+.why {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: hsl(179, 62%, 50%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--clr-primary-cyan);
+  padding-bottom: 20px;
+}
+
+.join h2 {
+  font-size: 1rem;
+  padding-bottom: 10px;
+  color: var(--clr-primary-yellow)
+}
+
+.join p {
+  color: var(--clr-neutral-blue);
+  line-height: 1.4em;
+}
+
+.sub, .why {
+  color: #FFF;
+}
+
+.sub h2, .why h2 {
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+.sub .price {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  color: var(--clr-neutral-gray);
+}
+
+.sub span {
+  font-size: 1.75em;
+  font-weight: var(--fw-bold);
+  padding-right: 10px;
+}
+
+.sub p.info {
+  font-size: 0.975rem;
+  color: var(--clr-neutral-gray);
+  padding-bottom: 30px;
+}
+
+.sub a {
+  display: block;
+  text-align: center;
+  background-color: var(--clr-primary-yellow);
+  text-decoration: none;
+  color: #FFF;
+  font-weight: var(--fw-bold);
+  font-size: 0.8125rem;
+  padding-block: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 0px 20px rgba(1, 1, 1, 0.2 );
+}
+
+.why ul {
+  list-style: none;
+}
+
+.why li {
+ color: var(--clr-neutral-gray);
+ font-size: 0.8rem;
+ line-height: 1.4em;
+}
+
+
+
+
+
+
