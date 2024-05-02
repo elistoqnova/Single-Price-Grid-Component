@@ -114,7 +114,7 @@ h1 {
 }
 
 .sub p.info {
-  font-size: 0.975rem;
+  font-size: 0.875rem;
   color: var(--clr-neutral-gray);
   padding-bottom: 30px;
 }
